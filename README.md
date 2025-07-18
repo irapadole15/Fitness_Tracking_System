@@ -1,3 +1,130 @@
+#  Fitness Tracking System
+
+A full-stack Fitness Tracking Web Application built with **Spring Boot** (Java) for the backend and **React.js** for the frontend. This system allows users to manage their diet plans, track workout routines, and browse through personalized exercise recommendations — all from one platform.
+
+---
+
+##  Features
+
+-  Personalized Diet Plan Management
+-  Activity Planning and Logging
+-  Exercise Listing and Search
+-  User-friendly Dashboard
+-  Secure RESTful APIs with Spring Boot
+-  Responsive UI built with React, HTML, CSS, and JavaScript
+
+---
+
+##  Tech Stack
+
+###  Frontend
+- React.js
+- HTML5 & CSS3
+- JavaScript
+
+### Backend
+- Java
+- Spring Boot (REST API)
+- Spring MVC, Spring Data JPA
+
+###  Database
+- MySQL
+
+---
+
+##  Project Structure
+
+```
+
+fitness-tracking-system/
+│
+├── backend/
+│   ├── src/main/java/com/fitness/
+│   │   ├── controller/
+│   │   ├── model/
+│   │   ├── repository/
+│   │   ├── service/
+│   │   └── FitnessTrackingApplication.java
+│   └── resources/
+│       └── application.properties
+│
+├── frontend/
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       ├── App.js
+│       └── index.js
+│
+├── README.md
+└── .env
+
+````
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Java 17+
+- Node.js & npm
+- MySQL Server
+- Maven
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/fitness-tracking-system.git
+cd fitness-tracking-system
+````
+
+---
+
+### Backend Setup
+
+```bash
+cd backend
+mvn clean install
+```
+
+Edit `application.properties` and update your MySQL credentials:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/fitness_db
+spring.datasource.username=root
+spring.datasource.password=yourpassword
+spring.jpa.hibernate.ddl-auto=update
+```
+
+Run the Spring Boot application:
+
+```bash
+mvn spring-boot:run
+```
+
+---
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+---
+
+##  API Endpoints
+
+| Endpoint          | Method | Description              |
+| ----------------- | ------ | ------------------------ |
+| `/api/users`      | GET    | Get all users            |
+| `/api/diet-plans` | POST   | Create a diet plan       |
+| `/api/exercises`  | GET    | List available exercises |
+| `/api/activities` | POST   | Log workout activity     |
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +195,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+---
+
+##  Demo Users (Optional)
+
+You can preload some sample data into your MySQL database to test functionality.
+
+---
+
+##  Future Enhancements
+
+* [ ] Integration with wearable fitness devices (Fitbit, etc.)
+* [ ] Admin dashboard for analytics
+* [ ] Notifications & email reminders
+* [ ] Mobile-friendly PWA support
+
+---
+
+##  Contact
+
+ [irapadole2004@gmail.com](mailto:irapadole2004@gmail.com)
+ [LinkedIn](https://www.linkedin.com/in/ira-padole-3487062b4) • [Portfolio](https://irapadole.com)
+
+```
